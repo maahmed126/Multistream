@@ -3,8 +3,9 @@ pipeline {
 	properties([
   pipelineTriggers([
     upstream(
-      threshold: 'SUCCESS',
+      threshold: 'SUCCESS',    
       upstreamProjects: '../Multistream/main'
+    echo 'This is Branch pipeline-triggers-upstream executed' 
     )
   ])
 ])
