@@ -4,8 +4,15 @@ pipeline {
   pipelineTriggers([
     upstream(
       threshold: 'SUCCESS',    
-      upstreamProjects: '../Multistream/main'
-    echo 'This is Branch pipeline-triggers-upstream executed' 
+      upstreamProjects: '../Multistream/main' 
     )
   ])
 ])
+ stages {			
+        stage('Build') {			
+            steps {			
+               echo 'This is branch pipeline-triggers-upstream executed'			
+            }			
+        }			
+    }
+}
