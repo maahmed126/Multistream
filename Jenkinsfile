@@ -1,5 +1,5 @@
-pipeline {
-  agent any
+pipeline {			
+    agent any
 	properties([
   pipelineTriggers([
     upstream(
@@ -8,4 +8,4 @@ pipeline {
     )
   ])
 ])
-}
+	{
