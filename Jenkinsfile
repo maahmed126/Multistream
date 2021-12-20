@@ -8,11 +8,4 @@ pipeline {
     )
   ])
 ])
- stages {			
-        stage('Build') {			
-            steps {			
-               echo 'This is branch pipeline-triggers-upstream executed'			
-            }			
-        }			
-    }
 }
